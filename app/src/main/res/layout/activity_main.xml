@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/relativeLayout">
+
+        <EditText
+            android:id="@+id/editInp"
+            android:layout_width="wrap_content"
+            android:layout_height="64sp"
+            android:layout_marginBottom="64dp"
+            android:layout_marginEnd="32sp"
+            android:layout_marginStart="32sp"
+            android:layout_marginTop="32sp"
+            android:background="#ffffff"
+            android:gravity="top"
+            android:hint="@string/OmKy"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/sButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/sButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:onClick="sendText"
+            android:text="@string/send"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editInp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:layout_weight="0.75">
+
+        <fragment
+            android:id="@+id/SettingsFrag"
+            android:name="com.fred.windtalker.MainActivity$SettingsFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/settings_frag" />
+    </FrameLayout>
+</LinearLayout>

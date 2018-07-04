@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">"Wind Talker"</string>
+    <string name="button_sensors">"Display Sensor Values"</string>
+    <string name="Err">"HErr: "</string>
+    <string name="defaultIP">192.168.178.21</string>
+    <string name="defaultPort">50000</string>
+    <string name="OmKy">The Sun has flung the stone that sets the stars to flight</string>
+    <string name="send">Send to Arduino</string>
+    <string name="UDPSent">Text Sent</string>
+    <string name="Settings">IP Settings</string>
+    <string name="debug">WTDebug</string>
+    <string name="advice">"Enter Text"</string>
+</resources>

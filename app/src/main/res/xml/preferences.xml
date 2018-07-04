@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:icon="?attr/actionModeCloseDrawable">
+
+    <PreferenceCategory
+        android:title="@string/Settings"
+        android:textSize = "24sp">
+
+    <EditTextPreference
+        android:key="IPAddress"
+        android:defaultValue="@string/defaultIP"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Arduino IP" />
+    <EditTextPreference
+        android:key="Port"
+        android:defaultValue="@string/defaultPort"
+        android:numeric="integer"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="UDP Port" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
